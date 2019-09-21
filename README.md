@@ -1,6 +1,7 @@
 # 一个公共的js库
  - [myjs-common GitHub](https://github.com/AnswerAIL/myjs-common)
  - [myjs-common NPM](https://www.npmjs.com/package/myjs-common)
+ - [myjs-common ApiDoc](https://github.com/AnswerAIL/myjs-common/blob/master/docs/HANDBOOK.md)
 
 
 ### 安装/卸载使用
