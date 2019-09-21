@@ -29,3 +29,6 @@
 
 
 #### 1.0.1
+
+
+> Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved

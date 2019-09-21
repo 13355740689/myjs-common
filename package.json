@@ -27,7 +27,10 @@
   },
   "keywords": [
     "common",
-    "typescript"
+    "typescript",
+    "utils",
+    "nodejs",
+    "javascript"
   ],
   "author": "AnswerAIL<answer_ljm@163.com>",
   "license": [
