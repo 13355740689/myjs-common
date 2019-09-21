@@ -233,7 +233,7 @@ declare module "myjs-common" {
          * @param key
          * @param value 
         */
-        public putIfAbsent(key:any, value:any): void;
+        public putIfAbsent(key:string | number, value:any): void;
 
         /**
          * 获取 key 对应的 value
@@ -241,7 +241,7 @@ declare module "myjs-common" {
          * @param key
          * @returns value | null
         */
-        public get(key:any):any;
+        public get(key:string | number):any;
 
         /**
          * 获取 hashmap 容器的大小
@@ -256,7 +256,7 @@ declare module "myjs-common" {
          * @param key
          * @returns value | null
         */
-        public remove(key:any):(null | string);
+        public remove(key: number | string):(null | string);
 
         /**
          * 判断容器是否为空
@@ -276,7 +276,7 @@ declare module "myjs-common" {
          * @param key
          * @returns true | false
         */
-        public containsKey(key:any):boolean;
+        public containsKey(key: string |number):boolean;
 
         /**
          * 判断容器中是否存在 value
