@@ -481,7 +481,7 @@ declare module "myjs-common" {
         /**
          * 构造函数
         */
-        constructor(str: string);
+       public constructor(str: string);
 
 
         /**
@@ -490,7 +490,7 @@ declare module "myjs-common" {
          * @param length [int]
          * @returns rlt [string]
         */
-        lpad(padStr: string, length: number): string;
+       public lpad(padStr: string, length: number): string;
 
 
         /**
@@ -499,7 +499,7 @@ declare module "myjs-common" {
          * @param length [int]
          * @returns rlt [string]
         */
-        rpad(padStr: string, length: number): string;
+       public rpad(padStr: string, length: number): string;
 
         /**
          * 格式化字符串, 对字符串内的所有{}格式化为`args`
@@ -507,7 +507,7 @@ declare module "myjs-common" {
          * @param args (string)[]
          * @returns rlt [string]
         */
-        format(args: []): string;
+       public format(args: []): string;
 
         /**
          * 对象值是否包含`searchString`
@@ -515,7 +515,7 @@ declare module "myjs-common" {
          * @param searchString [string]
          * @returns rlt [string]
         */
-        contains(searchString: string): string;
+       public contains(searchString: string): string;
 
         /**
          * 把对象值中的 `substr` 全部替换为 `replacement`
@@ -524,7 +524,7 @@ declare module "myjs-common" {
          * @param replacement [string]
          * @returns rlt [string]
         */
-        replaceAll(substr :string, replacement: string): string;
+       public replaceAll(substr :string, replacement: string): string;
 
         /**
          * 对象值是否以`searchString`开头
@@ -532,7 +532,7 @@ declare module "myjs-common" {
          * @param searchString [string]
          * @returns rlt [string]
         */
-        startWith(searchString: string): string;
+       public startWith(searchString: string): string;
 
         /**
          * 对象值是否以`searchString`结尾
@@ -540,7 +540,7 @@ declare module "myjs-common" {
          * @param searchString [string]
          * @returns rlt [string]
         */
-        endWith(searchString: string): string;
+       public endWith(searchString: string): string;
 
         /**
          * 往对象值后追加`str`
@@ -548,7 +548,7 @@ declare module "myjs-common" {
          * @param str [string]
          * @returns new MyString
         */
-        append(str: string): MyString;
+       public append(str: string): MyString;
 
         /**
          * 往对象值前追加`str`
@@ -556,6 +556,6 @@ declare module "myjs-common" {
          * @param str [string]
          * @returns new MyString
         */
-        preppend(str: string): MyString;
+       public preppend(str: string): MyString;
    }
 }
