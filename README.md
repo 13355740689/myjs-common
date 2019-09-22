@@ -24,11 +24,16 @@
  - 2019-09-20
  - 初始版本
 
+## 1.0.1
 
-### 1.1.0
+- 2019-09-22
+- *+* 新增 MyMap 类型
+- *+* 新增 MyString 类型
+- *-* 废弃 HashMap 类型
 
 
-#### 1.0.1
+
+&nbsp;
 
 
-> Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
+Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
