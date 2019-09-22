@@ -195,11 +195,11 @@ declare module "myjs-common" {
 
 
     /**
-     *~ HashMap 容器 
-    * @deprecated #Map
-    * @description HashMap 容器作废, es5 之后已有 Map 容器
+     *~ MyMap 容器 
+    * @deprecated #Map 不建议使用, 建议使用 ES5及之后版本的 Map 容器
+    * @description 1.0.0 版本 HashMap 容器已废弃
     */
-    class HashMap {
+    class MyMap {
         
         /**
          * 获取 _size 字段
@@ -465,4 +465,97 @@ declare module "myjs-common" {
          */
         public format(pattern: string): string;
     }
+
+
+    /**
+     * MyString 数据类型
+     * 
+     * @author AnswerALL<answer_ljm@163.com>
+     * @description Created At 2019-9-22 19:57:18
+    */
+   class MyString extends String {
+       /**
+        * 对象值
+       */
+       public readonly _string: string;
+        /**
+         * 构造函数
+        */
+        constructor(str: string);
+
+
+        /**
+         * 字符串个数不足`length`时左补`padStr`
+         * @param padStr [string]
+         * @param length [int]
+         * @returns rlt [string]
+        */
+        lpad(padStr: string, length: number): string;
+
+
+        /**
+         * 字符串个数不足`length`时右补`padStr`
+         * @param padStr [string]
+         * @param length [int]
+         * @returns rlt [string]
+        */
+        rpad(padStr: string, length: number): string;
+
+        /**
+         * 格式化字符串, 对字符串内的所有{}格式化为`args`
+         * 
+         * @param args (string)[]
+         * @returns rlt [string]
+        */
+        format(args: []): string;
+
+        /**
+         * 对象值是否包含`searchString`
+         * 
+         * @param searchString [string]
+         * @returns rlt [string]
+        */
+        contains(searchString: string): string;
+
+        /**
+         * 把对象值中的 `substr` 全部替换为 `replacement`
+         * 
+         * @param substr [string]
+         * @param replacement [string]
+         * @returns rlt [string]
+        */
+        replaceAll(substr :string, replacement: string): string;
+
+        /**
+         * 对象值是否以`searchString`开头
+         * 
+         * @param searchString [string]
+         * @returns rlt [string]
+        */
+        startWith(searchString: string): string;
+
+        /**
+         * 对象值是否以`searchString`结尾
+         * 
+         * @param searchString [string]
+         * @returns rlt [string]
+        */
+        endWith(searchString: string): string;
+
+        /**
+         * 往对象值后追加`str`
+         * 
+         * @param str [string]
+         * @returns new MyString
+        */
+        append(str: string): MyString;
+
+        /**
+         * 往对象值前追加`str`
+         * 
+         * @param str [string]
+         * @returns new MyString
+        */
+        preppend(str: string): MyString;
+   }
 }

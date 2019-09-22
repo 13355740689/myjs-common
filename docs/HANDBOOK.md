@@ -65,7 +65,7 @@ Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
 
 新增日期类型： 包含已有 Date() 类型的所有函数， 增加对日期计算以及格式化的支持
 
-| 函数                                  | 返回值                     | 描述                                                       |
+| 函数定义                              | 返回值                     | 描述                                                       |
 | ------------------------------------- | -------------------------- | ---------------------------------------------------------- |
 | add(*amount*: number, *prop*: string) | MyDate \| null             | 获取当前日期时间前后`amount`(年/月/日/时/分/秒/毫秒)的日期 |
 | diff(*date*: Date, *prop*: number)    | nuber \| undefined \| null | 获取当前实例和`date`的时间差值, 默认天数                   |
@@ -80,11 +80,11 @@ Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
 
 &nbsp;
 
-### HashMap
+### MyMap & HashMap
 
 一个 K-V 映射数据结构容器类型
 
-| 函数                                             | 返回值               | 描述                                       |
+| 函数定义                                         | 返回值               | 描述                                       |
 | ------------------------------------------------ | -------------------- | ------------------------------------------ |
 | put(*key*:string \| number, *value*:any)         | void                 | 往容器中新增一个元素, `如果已经存在则覆盖` |
 | putIfAbsent(*key*:string \| number, *value*:any) | void                 | 当容器中不存在 key 时往容器中新增一个元素  |
@@ -97,13 +97,29 @@ Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
 | containsValue(*value*:any)                       | boolean              | 判断容器中是否存在 value                   |
 | keySet()                                         | (string \| number)[] | 获取容器中的 key 列表                      |
 | toString()                                       | string               | 容器内信息转 json 字符串                   |
-|                                                  |                      |                                            |
-|                                                  |                      |                                            |
-|                                                  |                      |                                            |
 
+> `注意:`  HashMap 在 1.0.0 版本之后废弃
 
 &nbsp;
 
+### MyString
+
+新增字符串类型： 包含已有 String() 类型的所有函数， 增加对字符串格式化左补/右补等功能的支持
+
+| 函数定义                                        | 返回值   | 描述                                           |
+| ----------------------------------------------- | -------- | ---------------------------------------------- |
+| lpad(padStr: string, length: number)            | string   | 字符串个数不足`length`时左补`padStr`           |
+| rpad(padStr: string, length: number)            | string   | 字符串个数不足`length`时右补`padStr`           |
+| format(args: [])                                | string   | 格式化字符串, 对字符串内的所有{}格式化为`args` |
+| contains(searchString: string)                  | boolean  | 对象值是否包含`searchString`                   |
+| replaceAll(substr :string, replacement: string) | string   | 把对象值中的 `substr` 全部替换为 `replacement` |
+| startWith(searchString: string)                 | boolean  | 对象值是否以`searchString`开头                 |
+| endWith(searchString: string)                   | boolean  | 对象值是否以`searchString`结尾                 |
+| append(str: string)                             | MyString | 往对象值后追加`str`                            |
+| preppend(str: string)                           | MyString | 往对象值前追加`str`                            |
+
+
+&nbsp;
 
 ## 常量枚举
 
