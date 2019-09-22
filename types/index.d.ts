@@ -513,9 +513,9 @@ declare module "myjs-common" {
          * 对象值是否包含`searchString`
          * 
          * @param searchString [string]
-         * @returns rlt [string]
+         * @returns boolean
         */
-       public contains(searchString: string): string;
+       public contains(searchString: string): boolean;
 
         /**
          * 把对象值中的 `substr` 全部替换为 `replacement`
@@ -530,17 +530,17 @@ declare module "myjs-common" {
          * 对象值是否以`searchString`开头
          * 
          * @param searchString [string]
-         * @returns rlt [string]
+         * @returns boolean
         */
-       public startWith(searchString: string): string;
+       public startWith(searchString: string): boolean;
 
         /**
          * 对象值是否以`searchString`结尾
          * 
          * @param searchString [string]
-         * @returns rlt [string]
+         * @returns boolean
         */
-       public endWith(searchString: string): string;
+       public endWith(searchString: string): boolean;
 
         /**
          * 往对象值后追加`str`
