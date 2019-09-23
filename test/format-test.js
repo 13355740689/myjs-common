@@ -9,7 +9,7 @@ console.log(SimpleDateFormat.formatDate("", DATE_FORMATTER.DATETIME_FORMAT));
 let arr = ["Answer", 12, "FuJian"];
 console.log(StringUtils.format("my name is: {}, age: {}, address: {}", arr));
 arr = ["Answer", 12];
-console.log(StringUtils.format("my name is: {}, age: {}, address: {}", arr));
+console.log(StringUtils.format("my name is: { }, age: {   }, address: {}", arr));
 
 let str = "Hello World";
 console.log(StringUtils.startWith(str, "H"));
