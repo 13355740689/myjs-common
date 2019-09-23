@@ -26,7 +26,7 @@ Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
 
 | 函数定义                                           | 返回值  | 描述                               |
 | -------------------------------------------------- | ------- | ---------------------------------- |
-| format(*text*:string, *args*:(string \| number)[]) | string  | 字符串格式化                       |
+| format(*text*:string, *args*:(string \| number)[]) | string  | 字符串格式化， 占位符为: `{}`      |
 | startWith(*str*:string, *prefix*: string)          | boolean | 字符串`str`是否以 `prefix` 开头    |
 | endWith(*str*:string, *suffix*: string)            | boolean | 字符串`str`是否以 `suffix`结尾     |
 | lastEndChar(*str*: string, *count*?: number)       | string  | 返回字符串`str`指定后`count`个字符 |
@@ -110,13 +110,14 @@ Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
 | ----------------------------------------------- | -------- | ---------------------------------------------- |
 | lpad(padStr: string, length: number)            | string   | 字符串个数不足`length`时左补`padStr`           |
 | rpad(padStr: string, length: number)            | string   | 字符串个数不足`length`时右补`padStr`           |
-| format(args: [])                                | string   | 格式化字符串, 对字符串内的所有{}格式化为`args` |
+| format(args: [])                                | string   | 格式化字符串， 占位符为: `{}`                  |
 | contains(searchString: string)                  | boolean  | 对象值是否包含`searchString`                   |
 | replaceAll(substr :string, replacement: string) | string   | 把对象值中的 `substr` 全部替换为 `replacement` |
 | startWith(searchString: string)                 | boolean  | 对象值是否以`searchString`开头                 |
 | endWith(searchString: string)                   | boolean  | 对象值是否以`searchString`结尾                 |
 | append(str: string)                             | MyString | 往对象值后追加`str`                            |
 | preppend(str: string)                           | MyString | 往对象值前追加`str`                            |
+| String().*                                      | -        | `MyString 类型中 包括 String 类型的所有函数`   |
 
 
 &nbsp;
