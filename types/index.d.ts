@@ -507,7 +507,7 @@ declare module "myjs-common" {
          * @param args (string)[]
          * @returns rlt [string]
         */
-       public format(args: []): string;
+       public format(args: (string | number)[]): string;
 
         /**
          * 对象值是否包含`searchString`
