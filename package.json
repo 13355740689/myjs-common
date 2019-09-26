@@ -1,6 +1,6 @@
 {
   "name": "myjs-common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a common library for nodejs",
   "main": "./app.js",
   "types": "./types/index.d.ts",
