@@ -67,13 +67,14 @@ Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
 
 | 函数定义                              | 返回值                     | 描述                                                       |
 | ------------------------------------- | -------------------------- | ---------------------------------------------------------- |
-| add(*amount*: number, *prop*: string) | MyDate \| null             | 获取当前日期时间前后`amount`(年/月/日/时/分/秒/毫秒)的日期 |
+| add(*amount*: number, *prop*: string) | MyDate \| null             | 获取当前日期时间前后`amount`(年/月/日/时(默认)/分/秒/毫秒)的日期 |
 | diff(*date*: Date, *prop*: number)    | nuber \| undefined \| null | 获取当前实例和`date`的时间差值, 默认天数                   |
 | prev(*date*: Date)                    | boolean \| undefined       | 判断当前实例是否在指定日期`date`之前                       |
 | after(*date*: Date)                   | boolean \| undefined       | 判断当前实例是否在指定日期`date`之后                       |
 | format(*pattern*: string)             | string                     | 格式化当前实例日期                                         |
 | Date().*                              | -                          | `MyDate 类型中 包括 Date 类型的所有函数`                   |
 
+- *add()* 函数参数 *prop* 取值参见： `DATE_PROP_TYPE`
 - *diff()* 函数参数 *prop* 取值参见： `DATE_ENUM`
 - *format()* 函数参数 *pattern* 取值参见： `DATE_FORMATTER`
 
