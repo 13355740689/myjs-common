@@ -105,6 +105,27 @@ declare module "myjs-common" {
 
 
     /**
+     *~ 日期属性类型 
+    */
+   export namespace DATE_PROP_TYPE {
+        /** YEAR */
+        const YEAR: 			string;
+        /** MONTH */
+        const MONTH: 			string;
+        /** DAY */
+        const DAY: 			    string;
+        /** HOUR */
+        const HOUR: 			string;
+        /** MINUTE */
+        const MINUTE: 		    string;
+        /** SECONDS */
+        const SECONDS: 		    string;
+        /** MILLISECONDS */
+        const MILLISECONDS: 	string
+   }
+
+
+    /**
      *~ 日期格式化
     */
     export namespace SimpleDateFormat {
@@ -424,13 +445,13 @@ declare module "myjs-common" {
         public constructor();
 
         /**
-         * 获取当前日期时间前后`amount` 年/月/日/时/分/秒/毫秒
+         * 获取当前日期时间前后`amount` 年/月/日(默认)/时/分/秒/毫秒
          * 
          * @param amount [int]
          * @param prop [string] -[DATE_PROP_TYPE.XXX]
          * @returns date [MyDate] | [null]-prop参数值匹配不到时
         */
-        public add(amount: number, prop: string): MyDate | null;
+        public add(amount: number, prop?: string): MyDate | null;
 
         /**
          * 获取当前日期和`date`的时间差值, 默认天数`DATE_ENUM.DAY`
@@ -439,7 +460,7 @@ declare module "myjs-common" {
          * @param prop [number] -[DATE_ENUM.XXX]
          * @returns diff value[int] | [undefined]-日期格式错误 | [null]-计算错误
         */
-        public diff(date: Date, prop: number): number | undefined | null;
+        public diff(date: Date, prop?: number): number | undefined | null;
 
         /**
          * 判断当前日期是否在指定日期`date`之前
