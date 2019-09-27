@@ -442,7 +442,7 @@ declare module "myjs-common" {
         /**
          *~ 构造器
         */
-        public constructor();
+        public constructor(date?: Date | string);
 
         /**
          * 获取当前日期时间前后`amount` 年/月/日(默认)/时/分/秒/毫秒
