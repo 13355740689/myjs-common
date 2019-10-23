@@ -120,6 +120,17 @@ Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
 | preppend(str: string)                           | MyString | 往对象值前追加`str`                            |
 | String().*                                      | -        | `MyString 类型中 包括 String 类型的所有函数`   |
 
+&nbsp;
+
+### FuRequire
+
+上传文件请求工具类
+
+| 函数定义                                                     | 返回值 | 描述              |
+| ------------------------------------------------------------ | ------ | ----------------- |
+| http(*files*: (string)[], *options*: {}, *callback*: Function) | void   | 上传文件(`http`)  |
+| https(*files*: (string)[], *options*: {}, *callback*: Function) | void   | 上传文件(`https`) |
+
 
 &nbsp;
 
@@ -158,3 +169,11 @@ Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
  - **DATE_PROP_TYPE.MINUTE：** MINUTE
  - **DATE_PROP_TYPE.SECONDS：** SECONDS
  - **DATE_PROP_TYPE.MILLISECONDS：** MILLISECONDS
+
+&nbsp;
+
+### RESPONSE_CODE
+
+- **SUCCESS：** 00000
+- **FAILED：** 00001
+- **INVALID_PARAM：**10001

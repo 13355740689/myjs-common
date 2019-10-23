@@ -125,6 +125,17 @@ declare module "myjs-common" {
    }
 
 
+   /** 文件上传请求响应码 */
+   export namespace RESPONSE_CODE {
+        /** 成功 */
+        const SUCCESS: string;
+        /** 失败 */
+        const FAILED: string;
+        /** 非法参数 */
+        const INVALID_PARAM: string;
+    }
+
+
     /**
      *~ 日期格式化
     */
@@ -428,6 +439,41 @@ declare module "myjs-common" {
          * @returns diff value[int] | [undefined]-日期格式异常 | [null]-计算异常
         */
         public static diff(date1: Date, date2: Date, type?: number): number | undefined | null;
+    }
+
+    /**
+     *~ 上传文件请求工具类 
+     *
+     * @author AnswerALL<answer_ljm@163.com>
+     * @description Created At 2019-10-23 19:31:17
+     */
+    class FuRequire {
+
+        /**
+         *~ 构造器
+        */
+        private constructor();
+
+        /**
+         * 上传文件(http)
+         * 
+         * @param files []
+         * @param options {} `key=[method & host & port & path & file]`
+         * @param callback [Function] (code, data)
+         * @returns void
+        */
+        public static http(files: (string)[], options: {}, callback: Function): void;
+
+        /**
+         * 上传文件(https)
+         * 
+         * @param files []
+         * @param options {} `key=[method & host & port & path & file]`
+         * @param callback [Function] (code, data)
+         * @returns void
+        */
+       public static https(files: (string)[], options: {}, callback: Function): void;
+        
     }
 
 
