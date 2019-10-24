@@ -23,6 +23,7 @@ let options = {
     console.log(`响应数据: ${data}`);
 }); */
 
+// public AIResponse upload(@RequestParam("file")MultipartFile[] files, String txId, String txAmt) {}
 let params = {
     "txId": "20191024",
     "txAmt": "520"
