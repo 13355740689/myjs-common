@@ -23,4 +23,7 @@
     npm run tdu
     npm run tf
     npm run thm
+    
+    npm run patch
+    npm publish
 ```

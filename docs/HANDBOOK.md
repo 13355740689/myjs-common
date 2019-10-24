@@ -59,6 +59,21 @@ Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
 
 &nbsp;
 
+### FuRequire
+
+上传文件请求工具类
+
+| 函数定义                                                     | 返回值 | 描述              |
+| ------------------------------------------------------------ | ------ | ----------------- |
+| http(*files*: (string)[], *options*: {}, *callback*: (*code*: string, *data*: any) => void) | void   | 上传文件(`http`)  |
+| https(*files*: (string)[], *options*: {}, *callback*: (*code*: string, *data*: any) => void) | void   | 上传文件(`https`) |
+
+- 参数 *code* 取值参见： `RESPONSE_CODE`
+
+&nbsp;
+
+
+
 ## 新增类型
 
 ### MyDate
@@ -122,17 +137,6 @@ Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
 
 &nbsp;
 
-### FuRequire
-
-上传文件请求工具类
-
-| 函数定义                                                     | 返回值 | 描述              |
-| ------------------------------------------------------------ | ------ | ----------------- |
-| http(*files*: (string)[], *options*: {}, *callback*: Function) | void   | 上传文件(`http`)  |
-| https(*files*: (string)[], *options*: {}, *callback*: Function) | void   | 上传文件(`https`) |
-
-
-&nbsp;
 
 ## 常量枚举
 
@@ -176,4 +180,4 @@ Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
 
 - **SUCCESS：** 00000
 - **FAILED：** 00001
-- **INVALID_PARAM：**10001
+- **INVALID_PARAM：** 10001
