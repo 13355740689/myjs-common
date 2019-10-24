@@ -462,7 +462,7 @@ declare module "myjs-common" {
          * @param callback [Function] (code, data)
          * @returns void
         */
-        public static http(files: (string)[], options: {}, callback: Function): void;
+        public static http(files: (string)[], options: {}, callback: (code: string, data: any) => void): void;
 
         /**
          * 上传文件(https)
@@ -472,7 +472,7 @@ declare module "myjs-common" {
          * @param callback [Function] (code, data)
          * @returns void
         */
-       public static https(files: (string)[], options: {}, callback: Function): void;
+       public static https(files: (string)[], options: {}, callback: (code: string, data: any) => void): void;
         
     }
 
