@@ -65,8 +65,8 @@ Copyright © 2015 - 2019 Answer/MyJs. All Rights Reserved
 
 | 函数定义                                                     | 返回值 | 描述              |
 | ------------------------------------------------------------ | ------ | ----------------- |
-| http(*files*: (string)[], *options*: {}, *callback*: (*code*: string, *data*: any) => void) | void   | 上传文件(`http`)  |
-| https(*files*: (string)[], *options*: {}, *callback*: (*code*: string, *data*: any) => void) | void   | 上传文件(`https`) |
+| http(*files*: (string)[], *options*: {}, *callback*: (*code*: string, *data*: any) => void, *params*?: {}) | void   | 上传文件(`http`)  |
+| https(*files*: (string)[], *options*: {}, *callback*: (*code*: string, *data*: any) => void, *params*?: {}) | void   | 上传文件(`https`) |
 
 - 参数 *code* 取值参见： `RESPONSE_CODE`
 

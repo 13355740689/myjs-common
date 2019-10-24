@@ -23,9 +23,14 @@ let options = {
     console.log(`响应数据: ${data}`);
 }); */
 
-mr.https(files, options, (code, data) => {
+let params = {
+    "txId": "20191024",
+    "txAmt": "520"
+};
+
+mr.http(files, options, (code, data) => {
     console.log(`响应码: ${code}`);
     console.log(`响应数据: ${data}`);
-});
+}, params);
 
 
