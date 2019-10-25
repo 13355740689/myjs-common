@@ -458,24 +458,31 @@ declare module "myjs-common" {
          * 上传文件(http)
          * 
          * @param files []
-         * @param options {} `key=[method & host & port & path & file]`
+         * @param options OptionArgs `key=[method & host & port & path & file?]`
          * @param callback [Function] (code, data)
          * @param params 请求参数(可选)
          * @returns void
         */
-        public static http(files: (string)[], options: {}, callback: (code: string, data: any) => void, params?: {}): void;
+        public static http(files: (string)[], options: OptionArgs, callback: (code: string, data: any) => void, params?: {}): void;
 
         /**
          * 上传文件(https)
          * 
          * @param files []
-         * @param options {} `key=[method & host & port & path & file]`
+         * @param options OptionArgs `key=[method & host & port & path & file?]`
          * @param callback [Function] (code, data)
          * @param params 请求参数(可选)
          * @returns void
         */
-       public static https(files: (string)[], options: {}, callback: (code: string, data: any) => void, params?: {}): void;
-        
+       public static https(files: (string)[], options: OptionArgs, callback: (code: string, data: any) => void, params?: {}): void;
+    }
+
+    interface OptionArgs {
+        host: string;
+        port: number | string;
+        method: string;
+        path: string;
+        file?: string;
     }
 
 
